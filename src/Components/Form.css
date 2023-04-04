@@ -1,0 +1,146 @@
+.right_section {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0%;
+  top: 39.8vw;
+  justify-content: left;
+  height: 43vw;
+  width: 50%;
+  background: linear-gradient(132deg, #c7bb95 0%, #e1d8bb 100%);
+  padding-top: 3.2vw;
+}
+
+.right_section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.3vw;
+  background-color: white;
+  z-index: 2;
+}
+
+.right_title {
+  color: #282529;
+  font-size: 2.7vw;
+  font-weight: 100;
+  margin-left: 20%;
+}
+
+input,
+select {
+  height: 1.6vw;
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background: none;
+  border: none;
+  border-bottom: 2px #f2eee3 solid;
+  font-size: 1vw;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #282529;
+  opacity: 1;
+}
+
+.form_checkbox {
+  width: 1.6vw;
+  outline: none;
+}
+
+.form_clause {
+  position: absolute;
+  left: 25%;
+  bottom: 15%;
+  width: 45%;
+  font-size: 0.65vw;
+}
+
+.form_submit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: none;
+  background: linear-gradient(135deg, #e4dbbf 0%, #bcb18e 51.45%, #95885e 100%);
+  height: 5.3vw;
+  width: 90%;
+  z-index: 3;
+}
+
+.form_submit:hover {
+  background: linear-gradient(135deg, #95885e 0%, #bcb18e 51.45%, #e4dbbf 100%);
+}
+
+.invalid {
+  border-bottom: 2px #c52e23 solid;
+}
+
+.form_checkbox_invalid {
+  width: 1.6vw;
+  outline: 2px #c52e23 solid;
+}
+
+@media screen and (max-width: 1060px) {
+  .right_section {
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .right_title {
+    margin-left: 0;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .right_form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: initial;
+    flex-wrap: wrap;
+  }
+
+  input,
+  select {
+    margin: 5vw 12vw;
+    height: 3vw;
+    font-size: 2vw;
+    width: 70%;
+  }
+
+  .form_checkbox,
+  .form_checkbox_invalid {
+    width: 4vw;
+    height: 4vw;
+    margin: 1vw 3vw;
+  }
+
+  .form_clause {
+    position: static;
+    font-size: 1.2vw;
+    width: 65%;
+  }
+
+  .form_submit {
+    position: relative;
+    height: 10vw;
+    width: 100%;
+    margin-top: 5vw;
+  }
+
+  .right_section:before {
+    display: none;
+  }
+}
