@@ -24,5 +24,8 @@
 
 .news_line {
   margin: 1.6vw 0;
+  border: none;
+  background-color: #cabf9a;
+  height: 2px;
   width: 50%;
 }
